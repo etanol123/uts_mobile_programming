@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:uts_mobile_programming/task1.dart';
+// import 'package:uts_mobile_programming/task1.dart';
+import 'package:uts_mobile_programming/task2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Task1Screen(),
+      home: Task2Screen(),
     );
   }
 }

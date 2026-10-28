@@ -15,11 +15,11 @@ class Task1Screen extends StatelessWidget {
             children: [
               SizedBox(
                 height: 280,
-                width: double.infinity,
+                width: 170,
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(16),
                   child: Image.network(
-                    'https://banner2.cleanpng.com/20240330/bsc/transparent-eating-noodles-noodles-asian-cuisine-chopsticks-ea-woman-enjoying-noodles-peacefully-in-cozy-setting66079c039cdd36.24114507.webp',
+                    'https://images.unsplash.com/photo-1546069901-ba9599a7e63c',
                     fit: BoxFit.cover,
                   ),
                 ),
