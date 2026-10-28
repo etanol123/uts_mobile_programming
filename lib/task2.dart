@@ -40,9 +40,32 @@ class Task2Screen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final firstOrder = dummyOrders[0];
+
     return Scaffold(
       appBar: AppBar(title: const Text('Food Order List')),
-      body: const Center(child: Text('Task 2 - Setup Data Dummy')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Row(
+          children: [
+            Image.network(
+              firstOrder['imageUrl'],
+              width: 70,
+              height: 70,
+              fit: BoxFit.cover,
+            ),
+            const SizedBox(width: 12),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(firstOrder['title']),
+                Text('\$${firstOrder['price']}'),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
